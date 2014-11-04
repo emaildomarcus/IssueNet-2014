@@ -27,7 +27,7 @@
 			<h3>Administração</h3>
 			<ol>
 				<li><a href="usuario.jsp">Usuários</a></li>
-				<li><a href="#">Tarefas</a></li>
+				<li><a href="tarefa.jsp">Tarefas</a></li>
 				<li><a href="#">Critério de Avaliação</a></li>
 			</ol>
 
