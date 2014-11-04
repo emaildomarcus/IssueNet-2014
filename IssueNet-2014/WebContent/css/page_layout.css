@@ -1,0 +1,152 @@
+@CHARSET "UTF-8";
+
+/* CSS para Uma marcacao - Varios templates */
+/* Estilos geral */
+body {
+	margin:0;
+	padding:0;
+	border:none;
+	font: 11px/1.5 Verdana, Arial, Helvetica, sans-serif;
+	background:#ffe;
+	color:#333;
+	text-align:center;
+	}
+#tudo {
+	width:750px;     
+	margin:0 auto;
+	text-align:left;
+	}
+#topo {
+	height:50px;
+	border-bottom:1px solid #c30;
+	}
+#rodape {
+	clear:both;
+	text-align:center;
+	border-top:1px solid #c30;
+	}
+ul, ol {
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+h1, h2, h3 {
+	margin: 0.8em 0;
+	color:#c30;
+	font-size:1.4em;
+	}
+h2 {
+	font-size:1.2em;
+	}
+h3 {
+	font-size:1.0em;
+	}
+	
+.dest {
+	color:#039;
+	}
+/* Estilos para template de 3 colunas */
+#principal {
+	float:left;
+	width:460px;
+	margin-left:10px; 	
+	text-align:justify;
+	border:dotted #c30;
+	border-width: 0 1px;
+	padding: 0 10px;
+	}
+#nav {
+	width:120px;
+	float:left;
+	}
+#apoio {
+	width:120px;
+	float:right;
+	}
+/* Estilos para template duas colunas - navegacao esquerda */
+body#duascolunas #apoio {
+	display:none;
+	}
+body#duascolunas #principal {
+	width:600px;
+	border-right-width:0;
+	padding-right:0;
+	}
+/* Estilos para template duas colunas - navegacao esquerda opcao de fonte e fundo */
+body.duascolunas-a #topo, body.duascolunas-a #rodape{
+	font: 11px Verdana, Arial, Helvetica, sans-serif; 	
+	background:#cff; 
+	padding-bottom:1px;
+	}
+body.duascolunas-a	{
+	background:#fff;
+	font: 14px Georgia, "Times New Roman", Times, serif;
+	}
+body.duascolunas-a #principal  {
+	color:#c30;
+	}
+/* Estilos para template duas colunas -  navegacao direita */
+body#duascolunas-dir #nav, body#duascolunas-dir #apoio  {
+	width:130px;
+	float:right;
+	padding:0 0 10px 10px;
+	border-left: 1px dotted #c30; 
+	}
+body#duascolunas-dir #principal {
+	width:580px;
+	border:none; padding:0;
+	margin:0;
+	}
+/* Estilos para template de uma coluna com navegacao horizontal */ 
+body.umacoluna #tudo  {width:98%;}
+body.umacoluna #nav	{
+	float:none;
+	}
+body.umacoluna  #topo, body.umacoluna #tudo #principal, body.umacoluna  #rodape { 
+	margin:0;
+	width:100%; 
+	border-left:none; padding:0;
+	}
+body.umacoluna #nav {
+	width: 100%;
+	font: 11px Geneva, Arial, Helvetica, sans-serif;
+	list-style-type: none;
+	}
+body.umacoluna #nav h3 { display:none;}
+body.umacoluna #nav li {
+	float: left;
+	text-align:center;
+	}
+body.umacoluna #nav li a, body.umacoluna #nav li a:link {
+	background: #fff;
+	border-width: 1px;
+	border-color: #fff #eee #eee #fff;
+	border-style: solid;
+	text-decoration: none;
+	padding: 3px;
+	display: block;
+	}
+body.umacoluna #nav li a:hover {
+	color: #c30;
+	border-color: #aaab9c #fff #fff #ccc;
+	background: #fafafa;
+	}
+/* Fim das regras CSS para templates */
+
+/* Estilização do link - Proximo template */
+#principal p.linque {
+	font-size:0.8em;
+	margin-bottom:15px;
+	width:35em;
+	background-color:#669;
+	padding:2px 6px;
+	}
+#principal p.linque a, #principal p.linque a:link, 
+#principal p.linque a:visited {
+	text-decoration:none;
+	color:#ff0;
+	}
+#principal p.linque  a:hover {
+	color:#000;	
+	background-color:#ff0;
+	}

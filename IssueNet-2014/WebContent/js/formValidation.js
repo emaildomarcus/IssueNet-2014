@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+
+function limpaCampo() 
+{
+	$(this).val("");
+}
