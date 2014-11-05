@@ -10,37 +10,33 @@
 
 <!-- Bootstrap settings -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
-<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" /> -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
 <script type="text/javascript" src="js/bootstrap.js" />
-<script type="text/javascript" src="js/bootstrap.min.js" />
+<!-- <script type="text/javascript" src="js/bootstrap.min.js" /> -->
 <script type="text/javascript" src="js/npm.js" />
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>IssueNet-2014 - Home</title>
 </head>
-<body id="duascolunas" class="duascolunas-a">
-
+<!-- Template de interface do site Maujor  -->
+<!-- <body id="duascolunas" class="duascolunas-a">
 	<div id="tudo">
-
 		<div id="topo">
 			<h1>
 				<b class="dest">IssueNet </b> 2014
 			</h1>
 		</div>
-
 		<div id="nav">
 			<h2 class="dest">Menu</h2>
-
 			<h3>Administração</h3>
 			<ol>
 				<li><a href="usuario.jsp">Usuários</a></li>
 				<li><a href="tarefa.jsp">Tarefas</a></li>
 				<li><a href="#">Critério de Avaliação</a></li>
 			</ol>
-
 			<h3>Categorias</h3>
 			<ul>
 				<li><a href="#">(X)HTML</a></li>
@@ -53,13 +49,11 @@
 				<li><a href="#">Web Design</a></li>
 			</ul>
 		</div>
-
 		<div id="principal">
 			<h2>
 				<b class="dest">Bem Vindo </b> Usuário
 			</h2>
 			<p>Texto e dados do formulário</p>
-
 			<p>Curabitur hendrerit erat ut augue. Cras gravida. Mauris
 				consequat aliquam leo. Aenean non tortor id metus aliquet
 				consectetuer. Quisque sodales lectus ac orci. Donec eleifend
@@ -139,5 +133,10 @@
 		</div>
 
 	</div>
+</body>-->
+<body>
+	<a href="#content" class="sr-only sr-only-focusable">Skip to main
+		content</a>
+	<div class="container" id="content"><h1>The main page content</h1></div>
 </body>
 </html>
