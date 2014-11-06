@@ -9,15 +9,12 @@
 Custom styles for this template
 <link href="css/signin.css" rel="stylesheet" /> -->
 
-<link
-	href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-	rel="stylesheet">
-<link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
-<link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72"
-	href="/bootstrap/img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114"
-	href="/bootstrap/img/apple-touch-icon-114x114.png">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="/bootstrap/img/favicon.ico" rel="shortcut icon"> -->
+<link href="icons/girasol_16x16.ico" rel="shortcut icon">
+<link href="/bootstrap/img/apple-touch-icon.png" rel="apple-touch-icon" >
+<link href="/bootstrap/img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" >
+<link href="/bootstrap/img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" >
 
 <!-- CSS code from Bootply.com editor -->
 
@@ -29,7 +26,7 @@ Custom styles for this template
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title><%application.getInitParameter("appName"); %></title>
 </head>
 <body>
 
@@ -41,6 +38,7 @@ Custom styles for this template
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
 						aria-hidden="true">×</button>
+					<h1 class="text-center">Issue Net 2014</h1>
 					<h1 class="text-center">Login</h1>
 				</div>
 				<div class="modal-body">
