@@ -4,25 +4,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Template de interface do site Maujor 
-<link rel="stylesheet" type="text/css" href="css\_page_layout.css" />
-<script type="text/javascript" src="js/_formValidation.js" /> -->
-
-<!-- Bootstrap settings -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
-<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" /> -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
-<script type="text/javascript" src="js/bootstrap.js" />
-<!-- <script type="text/javascript" src="js/bootstrap.min.js" /> -->
-<script type="text/javascript" src="js/npm.js" />
-
+<!-- Template de interface do site Maujor -->
+<link rel="stylesheet" type="text/css" href="css/page_layout.css" />
+<script type="text/javascript" src="js/formValidation.js" /> 
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>IssueNet-2014 - Home</title>
 </head>
 <!-- Template de interface do site Maujor  -->
-<!-- <body id="duascolunas" class="duascolunas-a">
+<body id="duascolunas" class="duascolunas-a">
 	<div id="tudo">
 		<div id="topo">
 			<h1>
@@ -133,10 +123,5 @@
 		</div>
 
 	</div>
-</body>-->
-<body>
-	<a href="#content" class="sr-only sr-only-focusable">Skip to main
-		content</a>
-	<div class="container" id="content"><h1>The main page content</h1></div>
 </body>
 </html>
