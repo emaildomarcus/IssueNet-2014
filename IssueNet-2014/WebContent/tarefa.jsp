@@ -4,9 +4,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Template de interface do site Maujor 
-<link rel="stylesheet" type="text/css" href="css\_page_layout.css" />
-<script type="text/javascript" src="js/_formValidation.js" /> -->
+<!-- Template de interface do site Maujor -->
+<link rel="stylesheet" type="text/css" href="css\page_layout.css" />
+<script type="text/javascript" src="js/formValidation.js" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>IssueNet-2014 - Tarefa</title>
 </head>
