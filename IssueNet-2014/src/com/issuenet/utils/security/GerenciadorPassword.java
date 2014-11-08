@@ -16,7 +16,7 @@ public class GerenciadorPassword
 		try 
 		{
 			Properties defaultProps = new Properties();
-			FileInputStream in = new FileInputStream("password.properties");
+			FileInputStream in = new FileInputStream("login.properties");
 			defaultProps.load(in);
 			in.close();
 		} 
