@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page session="true"%>
 <!DOCTYPE html >
 <!-- PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd" -->
 <html>
@@ -9,12 +10,16 @@
 Custom styles for this template
 <link href="css/signin.css" rel="stylesheet" /> -->
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+	rel="stylesheet">
 <!-- <link href="/bootstrap/img/favicon.ico" rel="shortcut icon"> -->
 <link href="icons/girasol_16x16.ico" rel="shortcut icon">
-<link href="/bootstrap/img/apple-touch-icon.png" rel="apple-touch-icon" >
-<link href="/bootstrap/img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" >
-<link href="/bootstrap/img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" >
+<link href="/bootstrap/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="/bootstrap/img/apple-touch-icon-72x72.png"
+	rel="apple-touch-icon" sizes="72x72">
+<link href="/bootstrap/img/apple-touch-icon-114x114.png"
+	rel="apple-touch-icon" sizes="114x114">
 
 <!-- CSS code from Bootply.com editor -->
 
@@ -26,7 +31,7 @@ Custom styles for this template
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><%application.getInitParameter("appName"); %></title>
+<title><%=application.getInitParameter("appName")%></title>
 </head>
 <body>
 
@@ -42,19 +47,21 @@ Custom styles for this template
 					<h1 class="text-center">Login</h1>
 				</div>
 				<div class="modal-body">
-					<form class="form col-md-12 center-block">
+					<form name="loginFrm" class="form col-md-12 center-block"><!-- method="post" action="login" -->
 						<div class="form-group">
-							<input type="text" class="form-control input-lg"
-								placeholder="Email">
+							<input name="login" type="text" class="form-control input-lg" placeholder="Email">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control input-lg"
-								placeholder="Password">
+							<input name="passwd" type="password" class="form-control input-lg" placeholder="Password">
 						</div>
 						<div class="form-group">
-							<button class="btn btn-primary btn-lg btn-block">Sign In</button>
-							<span class="pull-right"><a href="#">Register</a></span><span><a
-								href="#">Need help?</a></span>
+							<button type="submit" id="signIn" form="loginFrm" formmethod="post" formaction="login"
+								class="btn btn-primary btn-lg btn-block" >Sign
+								In</button>
+
+							<span class="pull-right"><a href="novoUsuario.jsp">Register</a></span><span>
+								<a href="#">Need help?</a>
+							</span>
 						</div>
 					</form>
 				</div>
@@ -67,8 +74,10 @@ Custom styles for this template
 		</div>
 	</div>
 
-	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script type='text/javascript'
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type='text/javascript'
+		src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
 	<!-- JavaScript jQuery code from Bootply.com editor  -->
 
@@ -93,6 +102,14 @@ Custom styles for this template
 		ga('create', 'UA-40413119-1', 'bootply.com');
 		ga('send', 'pageview');
 	</script>
-
+	<!-- Verificar como fazer o envio dos campos do formulário para o servlet -->
+	<script>
+		function enviaForm() {
+			var form = document.getElementById("loginFrm");
+			alert(document.attributes.getNamedItem("login").nodeValue());
+			alert(form.getAttribute("passwd"));
+			form.submit();
+		}
+	</script>
 </body>
 </html>
