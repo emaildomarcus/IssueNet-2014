@@ -45,7 +45,20 @@ public class LoginSrv extends HttpServlet {
 		usuario.setSenha(request.getParameter("passwd"));
 /*		System.out.println(request.getParameterNames().nextElement() + "\n");*/
 		
+		//Marreta para teste
+		usuario.setIdUsuario((long) 1);
+		usuario.setNome("Rodrigo Moreira Martins");
+		
 		LoginBO bo = new LoginBO(usuario);
+		
+		if(bo.autenticaUsuario(usuario))
+		{
+			System.out.println("[LoginSrv][doPost] - Usuário autenticado com sucesso.");
+		}
+		else 
+		{
+			System.out.println("[LoginSrv][doPost] - Usuário não foi autenticado com sucesso. Por favor tente novamente.");
+		}
 	
 		System.out.println("Login : " + usuario.getLogin() +" \nPassword : " + usuario.getSenha());
 	}

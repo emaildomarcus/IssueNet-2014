@@ -57,4 +57,14 @@ public class GerenciadorPassword
 
 		return saida;
 	}
+	
+	public String getSenhaEncriptada(String senha) 
+	{
+		if (md5!=null) 
+		{
+			return encriptaMD5(senha.getBytes()).toString();
+		}
+		return null;
+		
+	}
 }

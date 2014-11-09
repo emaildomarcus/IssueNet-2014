@@ -49,10 +49,10 @@ Custom styles for this template
 				<div class="modal-body">
 					<form name="loginFrm" class="form col-md-12 center-block"><!-- method="post" action="login" -->
 						<div class="form-group">
-							<input name="login" type="text" class="form-control input-lg" placeholder="Email">
+							<input name="login" type="text" class="form-control input-lg" placeholder="Email" maxlength="20">
 						</div>
 						<div class="form-group">
-							<input name="passwd" type="password" class="form-control input-lg" placeholder="Password">
+							<input name="passwd" type="password" class="form-control input-lg" placeholder="Password" maxlength="16">
 						</div>
 						<div class="form-group">
 							<button type="submit" id="signIn" form="loginFrm" formmethod="post" formaction="login"

@@ -15,14 +15,14 @@
 		<param-value>IssueNet 2014</param-value>
 	</context-param>
 	<!-- Parametrização do algoritmo de encriptação de senha -->
-	<filter>
+	<!-- <filter>
 		<filter-name>encriptacao</filter-name>
 		<filter-class>com.issuenet.utils.security.GerenciadorPassword</filter-class>
 		<init-param>
 			<param-name>cypher</param-name>
 			<param-value>MD5</param-value>
 		</init-param>
-	</filter>
+	</filter> -->
 
 
 	<!-- Configuração do servlet Login -->
